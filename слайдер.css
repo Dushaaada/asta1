@@ -1,0 +1,526 @@
+html{
+  box-sizing: border-box;
+  
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  
+}
+
+html,
+body{
+  height: 100%;
+  
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+
+.section-title{
+  margin-bottom: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  
+
+}
+
+h3{
+  align-items: center;
+}
+
+
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.container{
+  background-color:transparent;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+  
+}
+
+.container2{
+  background-color:rgb(133, 129, 126);
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+
+
+
+body{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  background-color:#F5F1ED;
+  
+
+
+}
+
+
+
+.header{
+  background-color:#DAD2BC;
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  
+}
+
+header nav a:hover{
+border-bottom: 1px solid #ffffff;
+}
+
+.header__inner{
+  padding-top:  30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+  
+}
+.menu__list{
+  display: flex;
+  gap: 35px;
+
+}
+
+.menu__list-link{
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight:700 ;
+  font-size: 20px;
+ 
+  
+
+}
+
+.menu__list-item{
+
+  color: floralwhite;
+  text-decoration: none;
+  font-size: 16px;
+ 
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+
+.menu__list-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: width 0.40s ease-out;
+}
+
+.menu__list-item:hover:before {
+  width: 100%;
+}
+
+
+.menu__list-link-text:hover{
+border-bottom: 1px solid #112D4E;
+
+}
+
+
+
+.footer{
+  width: 100%;
+  height: auto;
+  background-color: #A99985;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer a{
+color: white;
+font-size: 14px;
+margin-left: 10px;
+}
+
+footer nav a:hover{
+border-bottom: 1px solid #ffffff;
+}
+
+.footer p{
+color: white;
+margin-left: 10px;
+}
+.app{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.app__img{
+  height: 35px;
+  width: 35px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  
+}
+
+.main{
+  flex-grow: 1;
+}
+
+
+
+.top{
+  color: white;
+  text-align: center;
+  padding-top: 105px;
+  padding-bottom: 50px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+}
+
+.title{
+  
+  color: white;
+  font-size: 130px;
+  font-weight: 700;
+
+}
+
+.title2{
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  margin-left: 430px;
+  margin-top: 50px;
+}
+
+.title3{
+font-size: 50px;
+font-weight: 700;
+color: rgb(0, 0, 0);
+margin-left: 460px;
+margin-top: 50px;
+}
+
+.title4{
+font-size: 50px;
+font-weight: 700;
+color: rgb(0, 0, 0);
+margin-left: 510px;
+margin-top: 50px;
+}
+
+.gradient-button{
+ 
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right,  #3F72AF  0%,  #DBE2EF 58%,#112D4E 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+
+}
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+
+.why-lease{
+  padding: 100px 0;
+  margin-bottom: 100px;
+  
+  
+}
+
+
+.why-lease__list{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
+}
+
+
+.card {
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Размещаем элементы в колонку */
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+  margin-top: 70px;
+}
+
+/* При наведении на карточку - меняем цвет тени */
+.card:hover {
+  box-shadow: 4px 8px 16px #70798C;
+}
+
+.card__top {
+  flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden; /* Скрываем, что выходит за пределы */
+}
+
+/* Контейнер для картинки */
+.card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+  transition: 0.2s;
+}
+
+/* При наведении - увеличиваем картинку */
+.card__image:hover > img {
+  transform: scale(1.1);
+}
+
+/* Размещаем скидку на товар относительно изображения */
+.card__label {
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #70798C;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.card__prices {
+  display: flex;
+  margin-bottom: 10px;
+  flex: 0 0 50%; /* Размещаем цены равномерно в две колонки */
+}
+
+.card__price::after {
+  content: "₽";
+  margin-left: 4px;
+  position: relative;
+}
+
+.card__price--discount {
+  font-weight: 700;
+  font-size: 19px;
+  color: #414141;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.card__price--discount::before {
+  content: "Со скидкой";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+.card__price--common {
+  font-weight: 400;
+  font-size: 17px;
+  color: #606060;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+}
+
+.card__price--common::before {
+  content: "Обычная";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+.card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #414141;
+}
+
+.card__title:hover {
+  color: #70798C;
+}
+
+.card__add {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #70798C;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #70798C;
+  border-radius: 4px;
+  cursor: pointer; /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin-top: auto; /* Прижимаем кнопку к низу карточки */
+}
+
+.card__add:hover {
+  border: 1px solid #70798C;
+  background-color: #70798C;
+  color: #fff;
+}
+
+
+.cards {
+  display: grid;
+  /* Автоматически заполняем на всю ширину grid-контейнера */
+  grid-template-columns: repeat(auto-fill, 225px);
+  width: 100%;
+  max-width: 1000px; /* Ширина grid-контейнера */
+  justify-content: center;
+  justify-items: center; /* Размещаем карточку по центру */
+  column-gap: 30px; /* Отступ между колонками */
+  row-gap: 40px; /* Отступ между рядами */
+  margin: 0 auto;
+}
+
+.location{
+margin-top: 400px;
+
+
+}
+
+
+.ris{
+margin-left: 230px;
+}
+
+.shop-title {
+  font-family: 'Tinos', serif;
+  font-size: 54px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 70px;
+  align-items: center;
+}
+
+
+.all {
+  object-fit: cover;
+}
+
+
+.shops {
+  display: flex;
+  justify-content: center;
+}
+
+.shops-item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+.shops-images {
+  margin-right: 40px;
+}
+
+.shops-text {
+  font-family: 'Tinos', serif;
+  font-size: 28px;
+  margin-left: 30px;
+}
+
+.left {
+float: left;
+padding: 0 20px 20px 0;
+}
+
+
+
+.button2 {
+display: inline-block;
+background: #3F72AF;
+color: #fff;
+padding: 20px;
+border: none;
+border-radius: 3px;
+text-decoration: none;
+font-family: Tahoma;
+font-size: 18px;
+cursor: pointer;
+margin-top: 20px;
+margin-left: 240px;
+}
+
+.sticker:hover {
+box-shadow: 4px 8px 16px #112D4E;
+}
+
+.compania{
+color: #112D4E
+}
